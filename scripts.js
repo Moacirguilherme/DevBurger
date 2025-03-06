@@ -10,6 +10,8 @@ myLi = myLi + `
 </li>
 `
 
+
+
 })
 list.innerHTML = myLi
 console.log(myLi)
