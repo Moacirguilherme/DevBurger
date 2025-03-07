@@ -4,8 +4,8 @@ let myLi = ''
 
 function showAll(){
 
-    menuOptions.forEach(produt => {
-    myLi = myLi + `
+    menuOptions.forEach((produt)=> {
+    myLi +=  `
         <li>
         <img src=${produt.src}>
         <p>${produt.name}</p>
