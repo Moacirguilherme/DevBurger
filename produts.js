@@ -1,6 +1,6 @@
 const menuOptions = [
 
-    { name: 'X-Salada', price: `R$ 30.00`, vegan: false, src: './assets/xsalada.jpeg' },
+    { name: 'X-Salada', price: 30, vegan: false, src: './assets/xsalada.jpeg' },
     
     { name: 'X-Bacon', price: 34, vegan: false, src: './assets/xbacon.png' },
     
