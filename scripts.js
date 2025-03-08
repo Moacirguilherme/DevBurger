@@ -26,3 +26,5 @@ function mapAllItens () {
 
 buttonShowAll.addEventListener('click', showAll)
 buttonMapAll.addEventListener('click', mapAllItens)
+
+git add . && git commit -m "Atualização" && git push
