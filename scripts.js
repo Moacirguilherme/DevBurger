@@ -1,16 +1,17 @@
 const list = document.querySelector('ul')
 const buttonShowAll = document.querySelector('.show-all')
 const buttonMapAll = document.querySelector('.map-all')
-let myLi = ''
 
-function showAll(){
 
-    menuOptions.forEach((produt)=> {
-    myLi +=  `
+function showAll(productsArray) {
+   let myLi = ''
+
+    productsArray.forEach((product) => {
+        myLi += `
         <li>
-        <img src=${produt.src}>
-        <p>${produt.name}</p>
-        <p class="item-price">R$ ${produt.price}</p>
+        <img src=${product.src}>
+        <p>${product.name}</p>
+        <p class="item-price">R$ ${product.price}</p>
     </li>
     `
     })
@@ -19,12 +20,23 @@ function showAll(){
 }
 
 
-function mapAllItens () {
-    console.log('chamei')
+function mapAllItens() {
+    const newPrices = menuOptions.map((product) => ({
+...product,
+price: product.price * 0.9,
+    }))
+    showAll(newPrices)
 }
 
 
-buttonShowAll.addEventListener('click', showAll)
+buttonShowAll.addEventListener('click', () => showAll(menuOptions))
 buttonMapAll.addEventListener('click', mapAllItens)
 
-git add . && git commit -m "Atualização" && git push
+
+
+
+
+
+
+
+//git add . && git commit -m "Atualização" && git push
