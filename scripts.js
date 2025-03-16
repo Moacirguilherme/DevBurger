@@ -64,3 +64,5 @@ filterAll.addEventListener('click', filterAllItens)
 
 
 //git add . && git commit -m "Atualização" && git push
+//git add . && git commit -m "Atualização" && git push
+//git add . && git commit -m "Atualização" && git push
